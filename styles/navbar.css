@@ -1,0 +1,133 @@
+/* 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Vast+Shadow&display=swap');
+
+:root {
+    --font-principal: 'Inter', sans-serif;
+    --cor-vinho: #8E2424;
+    --cor-primaria-texto: #667085;
+    --cor-secundaria-texto: #3A404E;
+    --cor-terciaria-texto: #FFF;
+    --cor-titulos-principais: #101828;
+
+    --tamanho-texto-um: 14px;
+    --tamanho-texto-dois: 16px;
+    --tamanho-texto-tres: 18px;
+    --tamanho-texto-quatro: 20px;
+    --tamanho-texto-cinco: 36px;
+    --tamanho-texto-seis: 48px;
+    --tamanho-texto-sete: 60px;
+
+    --peso-um: 400;
+    --peso-dois: 500;
+    --peso-tres: 600;
+
+    --font-style: normal;
+
+    --altura-caixa-texto: 24px;
+
+}
+
+header {
+    width: 100vh;
+}
+
+.container__cabecalho {
+    display: flex;
+    width: 1440px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho__logo {
+    display: flex;
+    width: 148px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.cabecalho__nome__empresa {
+    color: var(--cor-secundaria-texto);
+    font-family: var(--font-principal);
+    font-size: var(--tamanho-texto-tres);
+    font-style: var(--font-style);
+    font-weight: var(--peso-um);
+    line-height: var(--altura-caixa-texto);
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2em;
+}
+
+.cabecalho__links {
+    color: var(--cor-primaria-texto);
+    font-family: var(--font-principal);
+    font-size: var(--tamanho-texto-dois);
+    font-style: var(--font-style);
+    font-weight: var(--peso-dois);
+    line-height: var(--altura-caixa-texto);
+    text-decoration: none;
+}
+
+.cabecalho__links:hover {
+    color: blue;
+    text-decoration: 1px underline;
+}
+
+.cabecalho__links:active {
+    color: greenyellow;
+}
+
+.cabecalho__botoes {
+    display: flex;
+    column-gap: 1.8em;
+    align-items: center;
+}
+
+.cabecalho__botao__entrar {
+    color: var(--cor-primaria-texto);
+    font-family: var(--font-principal);
+    font-size: var(--tamanho-texto-dois);
+    font-style: var(--font-style);
+    font-weight: var(--peso-dois);
+    line-height: var(--altura-caixa-texto);
+    text-decoration: none;
+}
+
+.cabecalho__botao__entrar:hover {
+    color: blue;
+    text-decoration: 1px underline;
+}
+
+.button__cadastrar {
+    padding: 10px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    border: 1px solid var(--cor-vinho);
+    background: var(--cor-vinho);
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+}
+
+.cabecalho__botao__cadastrar {
+    color: var(--cor-terciaria-texto);
+    font-family: var(--font-principal);
+    font-size: var(--tamanho-texto-dois);
+    font-style: var(--font-style);
+    font-weight: var(--peso-dois);
+    line-height: var(--altura-caixa-texto);
+    text-decoration: none;
+}
+
+.cabecalho__botao__cadastrar:hover {
+    color: yellow;
+    text-decoration: 1px underline;
+}
