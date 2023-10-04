@@ -1,21 +1,34 @@
 /* 'Inter', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Vast+Shadow&display=swap');
 
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
 :root {
-    --font-principal: 'Inter', sans-serif;
     --cor-vinho: #8E2424;
     --cor-primaria-texto: #667085;
     --cor-secundaria-texto: #3A404E;
     --cor-terciaria-texto: #FFF;
     --cor-titulos-principais: #101828;
 
-    --tamanho-texto-um: 14px;
-    --tamanho-texto-dois: 16px;
-    --tamanho-texto-tres: 18px;
-    --tamanho-texto-quatro: 20px;
-    --tamanho-texto-cinco: 36px;
-    --tamanho-texto-seis: 48px;
-    --tamanho-texto-sete: 60px;
+    --tamanho-um: 14px;
+    --tamanho-dois: 16px;
+    --tamanho-tres: 18px;
+    --tamanho-quatro: 20px;
+    --tamanho-cinco: 36px;
+    --tamanho-seis: 48px;
+    --tamanho-sete: 60px;
+    --tamanho-oito: 30px;
+    --tamanho-nove: 24px;
 
     --peso-um: 400;
     --peso-dois: 500;
@@ -27,19 +40,15 @@
 
 }
 
-header {
-    width: 100vh;
-}
-
-.container__cabecalho {
+.container__navbar {
     display: flex;
-    width: 1440px;
+    width: 1500px;
     height: 80px;
     justify-content: space-around;
     align-items: center;
 }
 
-.cabecalho__logo {
+.navbar__logo {
     display: flex;
     width: 148px;
     justify-content: center;
@@ -48,63 +57,68 @@ header {
     flex-shrink: 0;
 }
 
-.cabecalho__nome__empresa {
+.navbar__nome__empresa {
     color: var(--cor-secundaria-texto);
-    font-family: var(--font-principal);
-    font-size: var(--tamanho-texto-tres);
+    font-size: var(--tamanho-tres);
     font-style: var(--font-style);
     font-weight: var(--peso-um);
     line-height: var(--altura-caixa-texto);
 }
 
-.cabecalho__menu {
+.navbar__menu {
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 2em;
 }
 
-.cabecalho__links {
+.navbar__links {
     color: var(--cor-primaria-texto);
-    font-family: var(--font-principal);
-    font-size: var(--tamanho-texto-dois);
+    font-size: var(--tamanho-dois);
     font-style: var(--font-style);
     font-weight: var(--peso-dois);
     line-height: var(--altura-caixa-texto);
     text-decoration: none;
 }
 
-.cabecalho__links:hover {
+.navbar__links:hover {
     color: blue;
     text-decoration: 1px underline;
 }
 
-.cabecalho__links:active {
+.navbar__links:active {
     color: greenyellow;
 }
 
-.cabecalho__botoes {
+.navbar__botoes {
     display: flex;
     column-gap: 1.8em;
     align-items: center;
 }
 
-.cabecalho__botao__entrar {
+.navbar__botao__entrar {
     color: var(--cor-primaria-texto);
-    font-family: var(--font-principal);
-    font-size: var(--tamanho-texto-dois);
+    font-size: var(--tamanho-dois);
     font-style: var(--font-style);
     font-weight: var(--peso-dois);
     line-height: var(--altura-caixa-texto);
     text-decoration: none;
+    border: none;
+    background-color: transparent;
 }
 
-.cabecalho__botao__entrar:hover {
+.navbar__botao__entrar:hover {
     color: blue;
     text-decoration: 1px underline;
 }
 
-.button__cadastrar {
+.navbar__botao__entrar:active {
+    color: greenyellow;
+}
+
+
+
+.navbar__botao__cadastrar {
     padding: 10px 18px;
     justify-content: center;
     align-items: center;
@@ -115,19 +129,21 @@ header {
     background: var(--cor-vinho);
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 
-}
-
-.cabecalho__botao__cadastrar {
     color: var(--cor-terciaria-texto);
-    font-family: var(--font-principal);
-    font-size: var(--tamanho-texto-dois);
+    font-size: var(--tamanho-dois);
     font-style: var(--font-style);
     font-weight: var(--peso-dois);
     line-height: var(--altura-caixa-texto);
     text-decoration: none;
 }
 
-.cabecalho__botao__cadastrar:hover {
+.navbar__botao__cadastrar:hover {
     color: yellow;
     text-decoration: 1px underline;
+}
+
+.navbar__botao__cadastrar:active {
+    background-color: white;
+    color: var(--cor-vinho);
+    border: 1px solid var(--cor-vinho);
 }

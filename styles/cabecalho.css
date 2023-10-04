@@ -1,0 +1,39 @@
+
+.cabecalho {
+    display: flex;
+    height: 407px;
+    padding: 96px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.cabecalho__subtitulo {
+    color: var(--cor-vinho);
+    font-size: var(--tamanho-dois);
+    font-style: var(--font-style);
+    font-weight: var(--peso-tres);
+    line-height: var(--altura-caixa-texto);
+}
+
+.cabecalho__titulo {
+    color: var(--cor-titulos-principais);
+    
+    font-size: var(--tamanho-seis);
+    font-style: var(--font-style);
+    font-weight: var(--peso-tres);
+    line-height: var(--altura-caixa-texto);
+    letter-spacing: -0.96px;
+    margin: 24px 0;
+}
+
+.cabecalho__paragrafo {
+    color: var(--cor-primaria-texto);
+    text-align: center;
+    
+    font-size: var(--tamanho-quatro);
+    font-style: var(--font-style);
+    font-weight: var(--peso-um);
+    line-height: var(--tamanho-oito);
+}
