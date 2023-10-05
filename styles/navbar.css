@@ -146,4 +146,5 @@ body {
     background-color: white;
     color: var(--cor-vinho);
     border: 1px solid var(--cor-vinho);
+    transition: 0.2s;
 }
