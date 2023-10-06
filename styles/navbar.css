@@ -11,6 +11,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    background-color: var(--cor-terciaria-texto);
 }
 
 :root {
@@ -19,6 +20,7 @@ body {
     --cor-secundaria-texto: #3A404E;
     --cor-terciaria-texto: #FFF;
     --cor-titulos-principais: #101828;
+    --cor-fundo: rgba(142, 36, 36, 0.05);
 
     --tamanho-um: 14px;
     --tamanho-dois: 16px;

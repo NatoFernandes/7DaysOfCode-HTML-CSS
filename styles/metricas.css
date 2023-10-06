@@ -1,14 +1,14 @@
 .metricas__container {
    /* background-color: aqua; */
    display: flex;
-   margin: 0 8em 6em 6.25em;
+   margin: 0em 6.5em 4em 5em;
    justify-content: space-between;
+   column-gap: 32px;
 }
 
 .metricas {
       display: flex;
       flex-direction: column;
-    
 }
 
 .metricas__numero {
