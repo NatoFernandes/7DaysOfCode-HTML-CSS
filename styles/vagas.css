@@ -22,7 +22,7 @@
     border: 2px solid transparent;
     background-color: var(--cor-fundo);
     border-radius: 16px;
-    margin:0 700px 0 700px
+    margin:0 50em 0 50em;
 }
 
 .vagas__container__titulo {
@@ -50,5 +50,5 @@
 }
 
 .vagas__container__imagem {
-    margin: 4em 6.5em 4em 5em;
+    margin: 4em 6.5em 2em 5em;
 }
