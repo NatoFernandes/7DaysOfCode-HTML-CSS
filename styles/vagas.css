@@ -1,5 +1,3 @@
-.vagas__container {}
-
 .vagas {
     display: flex;
     flex-direction: column;
@@ -21,7 +19,7 @@
 .borda__texto {
     border: 2px solid transparent;
     background-color: var(--cor-fundo);
-    border-radius: 16px;
+    border-radius: 1em;
     margin:0 50em 0 50em;
 }
 
@@ -50,5 +48,6 @@
 }
 
 .vagas__container__imagem {
+    width: 84.3em;
     margin: 4em 6.5em 2em 5em;
 }
